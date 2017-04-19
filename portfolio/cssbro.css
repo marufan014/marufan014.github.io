@@ -1,0 +1,339 @@
+body {
+    background-image: url(portfolio.jpg);
+    margin: auto;
+    background-attachment: fixed;
+	background-size: 100% auto;
+}
+.img {
+	margin-top:50px;
+	margin-left:200px;
+	height:300px;
+	width:300px;
+}
+
+/* IKI RESUME */
+
+* { box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*
+ Primary Rules
+*/
+h1 { font-weight: 300;
+      font-style:italic;
+     margin: 5px 0 0;
+     font-size: 40px;
+     color:#ba0018;
+     padding: 0 10px 10px;
+     border-radius:2px;
+     font-family: 'merriweather', sans-serif;
+}
+h2 { color: #ba0018;
+     width: 150px;
+     font-size: 18px;
+     padding-left: 20px;
+     font-weight:400;
+     font-family: 'merriweather', sans-serif;
+}
+h2:first-letter { font-size: 150%; }
+h3 { font-size: 18px;
+     font-weight: bold;
+     margin-bottom: 0;
+     line-height: 28px;
+     font-family: 'merriweather', sans-serif;
+}
+h2, h3 { margin-top: 5px }
+a { color: #ba0018;
+    display: inline-block;
+    text-decoration: none;
+    padding:2px 4px;
+    border-radius:2px;
+    margin-right:-2px;
+}
+
+.key:first-child { margin-left: 0 }
+.key { margin: 0 10px;
+       position: relative;
+}
+.key::before { content: '◆';
+               position: absolute;
+               left: -15px;
+               color: #555;
+               font-size: 7pt;
+}
+.key:first-child::before { content: '' }
+.section { border-bottom: 1px solid #ddd;
+           padding: 10px 0 15px;
+}
+.section:last-child { border: none }
+.section-text { width: 80%;
+                font-size: 18px;
+                line-height: 24px;
+                margin: 10px 0 10px;
+                padding: 0 10px;
+}
+.subsection { margin: 10px 0 5px }
+.desc { font-size: 16px; font-family: "source-sans-pro", sans-serif; color:#444;}
+.contact-info { font-size: 16px;
+                text-align: right;
+}
+.emph { font-style: italic }
+.light { color: #aaa;letter-spacing:1px;
+         font-size: 14px;
+         line-height:28px;
+         font-family: "source-sans-pro", sans-serif;
+         text-transform:uppercase;
+}
+ul{
+  padding-left:15px;
+}
+
+ul.skills{
+  float:left;
+  width:30%;
+  padding-left:0px;
+  margin: 0 20px 0 0;
+}
+
+ul.skills li{
+  list-style: none;
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+ul.skills li:last-child{
+  margin:0;
+}
+
+/*
+ Float Rules
+*/
+.row:before, .row:after { content: "";
+                          display: table;
+}
+.row:after { clear: both }
+.col { float: left }
+.col-right { float: right }
+
+/*
+ Page Rules
+*/
+.page { width: 1000px;
+        min-height: 29.7cm;
+        margin: 1cm auto;
+
+        background: white;
+        padding: 20px 50px;
+}
+.subpage { padding: 1cm;
+           border: 1px red solid;
+           height: 297mm;
+}
+
+@page { size: A4;
+        margin: 0;
+}
+
+@media print {
+    .page { margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+    }
+    .page-break{
+      page-break-before: always;
+      padding-top:30px;
+    }
+
+    body { font-size: 12pt;}
+    h1{
+      font-size: 23pt;
+    }
+
+    h2{
+      font-size:10pt;
+      width: 3cm;
+      padding-left: 10px;
+    }
+
+    h3 { font-size: 10pt; line-height:11pt}
+
+    .section-text { font-size: 9pt; line-height: 14pt; }
+
+    .light { font-size: 7.5pt; line-height:12pt; color:#ddd; }
+    
+    .page { width: 21cm }
+    ul {margin:5px 0 0}
+    .section { padding: 5px 0 8px }
+    .section-text { width: 15cm; margin: 5px 0 5px;}
+    .subsection { margin: 5px 0 0 }
+    .desc { font-size: 9pt }
+    
+    .contact-info { font-size: 9pt}
+    
+    ul.skills{margin: 0 10px 0 0;}
+    ul.skills li{ font-size: 9pt; margin-bottom:0}
+
+}
+
+/* BATAS */
+.opowae {
+	color: #39F; 
+	font-family: arial;
+	font-size: 300%;
+	margin-top:100px;
+	margin-left:180px;
+	font-weight:bold;
+}
+
+.opowae2 {
+	margin-left:100px;
+}
+
+.opowae3 {
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.jenengku {
+	color: #F6F;
+	font-family: arial;
+	font-size:100%;
+	margin-left:200px;
+	margin-top: 30px;
+	font-weight:bold;
+}
+
+.paragraf { 
+	color: #F0F; 
+	font-family: 'Lucida Sans', Arial, sans-serif; 
+	font-size: 16px;
+	text-align:justify;
+	line-height: 26px; 
+	text-indent: 30px;
+	margin-left: 15px;
+	margin-right: 700px;
+}
+	
+
+a { 
+	color: #fe921f; 
+	text-decoration: underline; 
+}
+
+a:hover { color: #ffffff }
+
+.date { 
+	background: #F09; 
+	color: #ffffff; 
+	display: inline-block; 
+	font-family: 'Lato', sans-serif; 
+	font-size: 12px; 
+	font-weight: bold; 
+	line-height: 24px; 
+	letter-spacing: 1px; 
+	margin: 50px 0 30px; 
+	padding: 10px 15px 8px; 
+	text-transform: uppercase;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #6CF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 20px;
+  width: 200px;
+  font-weight:bold;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 40px;
+}
+
+.button2 {
+	margin-left: 130px;
+}
+
+.button3 {
+	margin-left: -19px;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+
+.button:hover span:after {
+  opacity: 2;
+  right: 0;
+}
+.buttonn {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #6CF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 20px;
+  font-weight:bold;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 40px;
+}
+buttonn6{margin-left: 50px;
+	margin-top: 100px;
+}
+.buttonn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonn span:after {
+  content:'<';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.buttonn:hover span {
+  padding-left: 25px;
+}
+
+
+.buttonn:hover span:after {
+  opacity: 2;
+  left: 0;
+}

@@ -1,0 +1,2 @@
+	Saya menggunakan html 5 dalam mengerjakan tugas mata kuliah pemrograman web ini. Dalam menyusun file html ini, saya menggunakan css eksternal/ file css yang berada diluar file html.
+	Dalam mengerjakan/ menyusun tugas ini, saya mendapatkan bantuan dari teman-teman satu kelas saya. Dan saya membutuhkan waktu 5 hari dalam menyelesaikan tugas mata kuliah ini.
